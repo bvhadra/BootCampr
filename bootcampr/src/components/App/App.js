@@ -4,6 +4,7 @@ import InputForm from "../InputForm/InputForm";
 import NewPost from "../NewPost/NewPost";
 import dummyPosts from "../data/dummyPosts";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function App() {
   // initial state to show the dummyPosts data on the screen
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <div><Header /></div>
       <div id="main-container">
       <div id="input-form">
         <InputForm handleNewPost={handleNewPost} />
@@ -39,7 +40,7 @@ function App() {
           </div>
         ))}
       </div>
-      <footer></footer>
+      <div><Footer /></div>
     </div>
   );
 }
