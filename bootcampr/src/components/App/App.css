@@ -1,0 +1,16 @@
+:root {
+  --dark-blue: #1d3557;
+  --light-blue: #2a93fa;
+  --orange: #fca311;
+  --off-white: #f2f9ff;
+  --cream: #f1f1e6;
+}
+
+.App {
+  font-family: "arial";
+  background-color: var(--off-white);
+}
+
+p {
+
+}

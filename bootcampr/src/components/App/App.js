@@ -3,6 +3,7 @@ import "./App.css";
 import InputForm from "../InputForm/InputForm";
 import NewPost from "../NewPost/NewPost";
 import dummyPosts from "../data/dummyPosts";
+import Header from "../Header/Header";
 
 function App() {
   // initial state to show the dummyPosts data on the screen
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>BOOTCAMPR</header>
+      <Header />
       <InputForm handleNewPost={handleNewPost} />
       {posts.map((e) => (
         <NewPost name={e.name} category={e.category} post={e.post} />

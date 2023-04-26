@@ -1,4 +1,34 @@
-#inputform {
+:root {
+  --dark-blue: #1d3557;
+  --light-blue: #2a93fa;
+  --orange: #fca311;
+  --off-white: #f2f9ff;
+  --cream: #f1f1e6;
+}
+
+.inputform {
   display: flex;
   flex-direction: column;
+  font-family: arial;
+  background-color: var(--off-white);
+}
+
+textarea {
+  font-family: Arial;
+  color: #333;
+  background-color: var(--off-white);
+}
+input {
+  font-family: Arial;
+  color: #333;
+  background-color: var(--off-white);
+}
+
+select {
+  background-color: var(--off-white);
+}
+
+button {
+  background-color: var(--dark-blue);
+  color: var(--off-white);
 }
