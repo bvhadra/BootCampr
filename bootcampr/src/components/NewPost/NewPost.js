@@ -6,6 +6,7 @@ import Comment from "../Comment/Comment";
 
 // props needed from app to show name, category and post from InputForm.
 function NewPost({ name, category, post }) {
+  const categoryClassName = `${category}`
   
 const [comments, setComments] = useState(dummyComments)
 
@@ -19,7 +20,7 @@ const [comments, setComments] = useState(dummyComments)
   };
 
   return (
-    <div className="NewPost">
+    <div className={categoryClassName}>
       <h3>{name}</h3>
       <h6>{category}</h6>
       <p>{post}</p>

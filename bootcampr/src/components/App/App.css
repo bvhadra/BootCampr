@@ -11,6 +11,13 @@
   background-color: var(--off-white);
 }
 
-p {
-
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
+#main-container > * {
+  flex-basis: calc(33.33% - 100px);
+}
+
