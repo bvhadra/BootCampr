@@ -11,5 +11,14 @@
   }
 
   .meme {
-    background-color: ;
+    background-color: var(--orange);
+  }
+
+  .question {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+  }
+
+  .random {
+    background-color: var(--cream);
   }
