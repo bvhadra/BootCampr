@@ -30,7 +30,9 @@ function InputForm({ handleNewPost }) {
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       >
-        <option value="category">Category</option>
+        <option value="category" disabled selected>
+          Category
+        </option>
         <option value="General">General</option>
         <option value="Question">Question</option>
         <option value="Joke/Meme">Joke/Meme</option>
