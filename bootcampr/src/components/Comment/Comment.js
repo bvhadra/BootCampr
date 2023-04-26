@@ -6,7 +6,7 @@ function Comment() {
   return (
     <div className="Comment">
     <CommentForm />
-
+    
     </div>
   )
 }
