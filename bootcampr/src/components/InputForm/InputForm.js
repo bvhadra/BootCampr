@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import "./InputForm.css";
 
 function InputForm() {
+  const [form, setForm] = useState({
+    name: "",
+    category: "",
+    post: "",
+  });
+
   return (
     <div className="inputform">
       <input type="text" id="name" placeholder="Name"></input>
