@@ -1,24 +1,36 @@
 :root {
-    --dark-blue: #1d3557;
-    --light-blue: #2a93fa;
-    --orange: #fca311;
-    --off-white: #f2f9ff;
-    --cream: #f1f1e6;
-  }
+  --dark-blue: #1d3557;
+  --light-blue: #2a93fa;
+  --orange: #fca311;
+  --off-white: #f2f9ff;
+  --cream: #f1f1e6;
+}
 
-.general {
-    background-color: var(--light-blue);
-  }
+.General {
+  background-color: var(--light-blue);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-  .meme {
-    background-color: var(--orange);
-  }
+.Joke\/Meme {
+  background-color: var(--orange);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-  .question {
-    background-color: var(--dark-blue);
-    color: var(--off-white);
-  }
+.Question {
+  background-color: var(--dark-blue);
+  color: var(--off-white);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-  .random {
-    background-color: var(--cream);
-  }
+.Random {
+  background-color: var(--cream);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}

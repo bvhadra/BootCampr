@@ -42,7 +42,7 @@ function InputForm({ handleNewPost }) {
         type="text"
         name="post"
         id="textarea"
-        rows="5"
+        rows="18"
         placeholder="Write your post here"
         value={post}
         onChange={(e) => setPost(e.target.value)}

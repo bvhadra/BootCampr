@@ -19,6 +19,13 @@
 }
 
 #main-container > * {
+  display: flex;
+  flex-direction: column;
   flex-basis: calc(33.33% - 100px);
+  padding: 2%;
+  margin: 2%;
 }
 
+#all-posts {
+  justify-content: space-between;
+}

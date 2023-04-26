@@ -11,21 +11,32 @@
   flex-direction: column;
   font-family: arial;
   background-color: var(--off-white);
+  align-items: flex-start;
+  border-style: solid;
+  border-color: var(--dark-blue);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 textarea {
   font-family: Arial;
   color: #333;
   background-color: var(--off-white);
+  width: 90%;
 }
+
 input {
   font-family: Arial;
   color: #333;
   background-color: var(--off-white);
+  width: 90%;
 }
 
 select {
   background-color: var(--off-white);
+  border-radius: 10px;
+  width: 90%;
 }
 
 button {
