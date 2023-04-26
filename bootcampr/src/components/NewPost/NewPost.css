@@ -1,0 +1,24 @@
+:root {
+    --dark-blue: #1d3557;
+    --light-blue: #2a93fa;
+    --orange: #fca311;
+    --off-white: #f2f9ff;
+    --cream: #f1f1e6;
+  }
+
+.general {
+    background-color: var(--light-blue);
+  }
+
+  .meme {
+    background-color: var(--orange);
+  }
+
+  .question {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+  }
+
+  .random {
+    background-color: var(--cream);
+  }

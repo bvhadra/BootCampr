@@ -7,9 +7,10 @@ import Header from "../Header/Header";
 
 function App() {
   // initial state to show the dummyPosts data on the screen
+  
   const [posts, setPosts] = useState(dummyPosts);
   console.log(posts);
-  
+
   const handleNewPost = (name, category, post) => {
     const newPost = {
       id: Math.random().toString(36),
@@ -23,10 +24,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <InputForm handleNewPost={handleNewPost} />
-      {posts.map((e) => (
-        <NewPost name={e.name} category={e.category} post={e.post} />
-      ))}
+      <div id="main-container">
+        <InputForm handleNewPost={handleNewPost} />
+        {posts.map((e) => (
+          <NewPost
+            className={e.category}
+            name={e.name}
+            category={e.category}
+            post={e.post}
+          />
+        ))}
+      </div>
       <footer></footer>
     </div>
   );
