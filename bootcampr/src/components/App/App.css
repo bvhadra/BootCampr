@@ -9,6 +9,11 @@
 .App {
   font-family: "arial";
   background-color: var(--off-white);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #main-container {
