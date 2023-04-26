@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from 'react'
 import "./InputForm.css";
 
-export default function InputForm() {
+function InputForm() {
   return (
-    <div id="inputform">
+    <div className="inputform">
       <input type="text" id="name" placeholder="Name"></input>
       <select id="category">
         <option value="category">Category</option>
@@ -22,3 +22,5 @@ export default function InputForm() {
     </div>
   );
 }
+
+export default InputForm;
