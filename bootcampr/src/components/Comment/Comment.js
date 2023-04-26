@@ -1,12 +1,11 @@
 import React from 'react'
 import './Comment.css'
-import CommentForm from '../CommentForm/CommentForm';
 
-function Comment() {
+function Comment({commentName, commentPost}) {
   return (
     <div className="Comment">
-    <CommentForm />
-    
+    <p>{commentName}</p>
+    <p>{commentPost}</p>
     </div>
   )
 }
