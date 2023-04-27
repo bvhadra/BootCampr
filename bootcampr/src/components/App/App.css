@@ -14,6 +14,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 #main-container {
@@ -25,5 +26,10 @@
 
 #main-container > * {
   flex-basis: calc(33.33% - 100px);
+}
+
+#footer {
+  margin-top: auto;
+  width: 100%;
 }
 

@@ -36,7 +36,7 @@ function App() {
           />
         ))}
       </div>
-      <div><Footer /></div>
+      <div id ="footer"><Footer /></div>
     </div>
   );
 }
