@@ -3,9 +3,9 @@ import "./Comment.css";
 
 function Comment({ category, commentName, commentPost }) {
   return (
-    <div className={category}>
-      <p>{commentName}</p>
-      <p>{commentPost}</p>
+    <div className="Comment">
+      <p id="commentname">{commentName}</p>
+      <p id="commentcontent">{commentPost}</p>
     </div>
   );
 }

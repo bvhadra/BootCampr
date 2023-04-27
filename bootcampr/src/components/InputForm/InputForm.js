@@ -17,16 +17,20 @@ function InputForm({ handleNewPost }) {
     handleNewPost(name, category, post);
     setName("");
     setPost("");
+
+    
   }
 
   return (
     <div className="inputform">
+    <div className="inputitems">
       <input
         type="text"
         name="name"
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        
       ></input>
       <select
         name="category"
@@ -36,10 +40,10 @@ function InputForm({ handleNewPost }) {
         <option value="" disabled={true}>
           Category
         </option>
-        <option value="General">General</option>
-        <option value="Question">Question</option>
-        <option value="Joke/Meme">Joke/Meme</option>
-        <option value="Random">Random</option>
+        <option value="general">general</option>
+        <option value="question">question</option>
+        <option value="funny">funny</option>
+        <option value="random">random</option>
       </select>
       <textarea
         type="text"
@@ -52,6 +56,7 @@ function InputForm({ handleNewPost }) {
         maxLength={1000}
       ></textarea>
       <button onClick={handleSubmit}>Submit</button>
+      </div>
     </div>
   );
 }
