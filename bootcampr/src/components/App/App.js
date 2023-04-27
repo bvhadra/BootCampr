@@ -33,6 +33,7 @@ function App() {
           <div id="all-posts">
             <NewPost
               className={e.category}
+              key={Math.random().toString(36)}
               name={e.name}
               category={e.category}
               post={e.post}
