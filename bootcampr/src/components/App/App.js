@@ -10,7 +10,7 @@ function App() {
   // initial state to show the dummyPosts data on the screen
 
   const [posts, setPosts] = useState(dummyPosts);
-  console.log(posts);
+  // console.log(posts);
 
   const handleNewPost = (name, category, post) => {
     const newPost = {
@@ -19,7 +19,7 @@ function App() {
       category: category,
       post: post,
     };
-    setPosts([...posts, newPost]);
+    setPosts([newPost, ...posts]);
   };
 
   return (
