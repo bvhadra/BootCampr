@@ -12,7 +12,7 @@ function CommentForm({ handleNewComment }) {
   }
 
   return (
-    <div className="CommentForm">
+    <div className="comment-form">
       <input
         type="text"
         name="commentName"
@@ -28,7 +28,9 @@ function CommentForm({ handleNewComment }) {
         value={commentPost}
         onChange={(e) => setCommentPost(e.target.value)}
       ></textarea>
-      <button onClick={handleCommentSubmit}>Submit</button>
+      <button id="comment-button" onClick={handleCommentSubmit}>
+        Submit
+      </button>
     </div>
   );
 }
