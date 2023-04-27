@@ -12,7 +12,6 @@ This is a social networking app for School of Code (SoC) bootcampers where users
 - Users can leave comments on any post.
 - Posts will be colour coded depending on the category selected.
 
-
 ## Installation
 
 To install the app, clone the repository and run npm install to install the dependencies.
