@@ -24,6 +24,7 @@ textarea {
   color: #333;
   background-color: var(--off-white);
   width: 90%;
+  border: 1px solid var(--dark-blue);
 }
 
 input {
@@ -31,12 +32,15 @@ input {
   color: #333;
   background-color: var(--off-white);
   width: 90%;
+  border: 1px solid var(--dark-blue);
 }
 
 select {
   background-color: var(--off-white);
-  border-radius: 10px;
-  width: 90%;
+  color: #333;
+  border-radius: 7px;
+  width: 95%;
+  border: 1px solid var(--dark-blue);
 }
 
 button {

@@ -6,6 +6,7 @@ function InputForm({ handleNewPost }) {
   const [category, setCategory] = useState("");
   const [post, setPost] = useState("");
 
+
   //   // array? posts?
   //   const handleChange = (event) => {
   //     setForm({ ...form, [event.target.name]: event.target.value });
@@ -14,6 +15,8 @@ function InputForm({ handleNewPost }) {
   function handleSubmit() {
     // stop the page clearing the form and refreshing on each input
     handleNewPost(name, category, post);
+    setName("");
+    setPost("");
   }
 
   return (
@@ -30,7 +33,7 @@ function InputForm({ handleNewPost }) {
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       >
-        <option value="category" disabled selected>
+        <option value="" disabled={true}>
           Category
         </option>
         <option value="General">General</option>
@@ -46,6 +49,7 @@ function InputForm({ handleNewPost }) {
         placeholder="Write your post here"
         value={post}
         onChange={(e) => setPost(e.target.value)}
+        maxLength={1000}
       ></textarea>
       <button onClick={handleSubmit}>Submit</button>
     </div>
