@@ -21,11 +21,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 10px;
 }
 
 #main-container > * {
   flex-basis: calc(33.33% - 100px);
+  padding: 10px;
+  margin-top: 25px;
 }
 
 #footer {
