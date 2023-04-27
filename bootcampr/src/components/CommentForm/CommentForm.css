@@ -1,3 +1,11 @@
+:root {
+  --dark-blue: #1d3557;
+  --light-blue: #2a93fa;
+  --orange: #fca311;
+  --off-white: #f2f9ff;
+  --cream: #f1f1e6;
+}
+
 input {
   padding: 2%;
   margin: 2px;
@@ -14,4 +22,18 @@ button {
   padding: 2%;
   margin: 2px;
   border-radius: 7.5px;
+  align-self: flex-end;
+}
+#comment-button {
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+  width: fit-content;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: right;
+  align-items: flex-end;
+  margin-right: 4%;
 }
