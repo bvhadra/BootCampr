@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 
 function App() {
   // initial state to show the dummyPosts data on the screen
-  
+
   const [posts, setPosts] = useState(dummyPosts);
   console.log(posts);
 
@@ -26,14 +26,19 @@ function App() {
     <div className="App">
       <div><Header /></div>
       <div id="main-container">
+      <div id="input-form">
         <InputForm handleNewPost={handleNewPost} />
+        </div>
         {posts.map((e) => (
-          <NewPost
-            className={e.category}
-            name={e.name}
-            category={e.category}
-            post={e.post}
-          />
+          <div id="all-posts">
+            <NewPost
+              className={e.category}
+              key={Math.random().toString(36)}
+              name={e.name}
+              category={e.category}
+              post={e.post}
+            />
+          </div>
         ))}
       </div>
 

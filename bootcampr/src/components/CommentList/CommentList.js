@@ -18,7 +18,11 @@ function CommentList() {
   return (
     <div className="comment-list">
       {comments.map((e) => (
-        <Comment commentName={e.commentName} commentPost={e.commentPost} />
+        <Comment
+          key={Math.random().toString(36)}
+          commentName={e.commentName}
+          commentPost={e.commentPost}
+        />
       ))}
       <CommentForm handleNewComment={handleNewComment} />
     </div>

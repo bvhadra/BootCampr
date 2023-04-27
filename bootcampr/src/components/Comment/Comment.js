@@ -1,13 +1,13 @@
-import React from 'react'
-import './Comment.css'
+import React from "react";
+import "./Comment.css";
 
-function Comment({commentName, commentPost}) {
+function Comment({ commentName, commentPost }) {
   return (
     <div className="Comment">
-    <p>{commentName}</p>
-    <p>{commentPost}</p>
+      <p>{commentName}</p>
+      <p>{commentPost}</p>
     </div>
-  )
+  );
 }
 
 export default Comment;
