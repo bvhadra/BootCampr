@@ -17,6 +17,8 @@ function InputForm({ handleNewPost }) {
     handleNewPost(name, category, post);
     setName("");
     setPost("");
+
+    
   }
 
   return (
@@ -27,6 +29,7 @@ function InputForm({ handleNewPost }) {
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        
       ></input>
       <select
         name="category"
