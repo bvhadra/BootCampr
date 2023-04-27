@@ -4,8 +4,8 @@ import "./Comment.css";
 function Comment({ commentName, commentPost }) {
   return (
     <div className="Comment">
-      <p>{commentName}</p>
-      <p>{commentPost}</p>
+      <p id="commentname">{commentName}</p>
+      <p id="commentcontent">{commentPost}</p>
     </div>
   );
 }

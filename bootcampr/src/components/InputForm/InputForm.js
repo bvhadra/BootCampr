@@ -21,6 +21,7 @@ function InputForm({ handleNewPost }) {
 
   return (
     <div className="inputform">
+    <div className="inputitems">
       <input
         type="text"
         name="name"
@@ -52,6 +53,7 @@ function InputForm({ handleNewPost }) {
         maxLength={1000}
       ></textarea>
       <button onClick={handleSubmit}>Submit</button>
+      </div>
     </div>
   );
 }

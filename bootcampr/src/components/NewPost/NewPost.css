@@ -6,10 +6,9 @@
   --cream: #f1f1e6;
 }
 
-  * {
-    border-radius: 5px;
-  }
-
+* {
+  border-radius: 5px;
+}
 
 .general {
   background-color: var(--light-blue);
@@ -38,5 +37,22 @@
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
+}
+
+#name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+#category {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-left: 5%;
+}
+
+#post {
+  font-size: 16px;
+  margin-left: 5%;
 }
 
