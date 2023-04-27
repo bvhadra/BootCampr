@@ -1,7 +1,7 @@
 import React from "react";
 import "./Comment.css";
 
-function Comment({ commentName, commentPost }) {
+function Comment({ category, commentName, commentPost }) {
   return (
     <div className="Comment">
       <p id="commentname">{commentName}</p>
