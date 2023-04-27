@@ -3,18 +3,18 @@ import "./NewPost.css";
 import CommentList from "../CommentList/CommentList";
 
 // props needed from app to show name, category and post from InputForm.
-function NewPost({ id, name, category, post }) {
+function NewPost({ postId, name, category, post }) {
   const categoryClassName = `${category}`;
 
   return (
-    <div>
+    <div id={postId}>
       <div className={categoryClassName}>
         <p id="name">{name}</p>
         <p id="post">{post}</p>
         <p id="category">#{category}</p>
       </div>
       <div className={categoryClassName}>
-        <CommentList category={category} />
+        <CommentList commentListId={postId} category={category} />
       </div>
     </div>
   );

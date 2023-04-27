@@ -14,10 +14,10 @@ function App() {
 
   const handleNewPost = (name, category, post) => {
     const newPost = {
-      id: Math.random().toString(36),
+      postId: posts.length,
       name: name,
       category: category,
-      post: post,
+      post: post
     };
     setPosts([newPost, ...posts]);
   };
@@ -31,11 +31,11 @@ function App() {
         <div id="input-form">
           <InputForm handleNewPost={handleNewPost} />
         </div>
-        {posts.map((e) => (
-          <div id="all-posts">
+        {posts.map((e, index) => (
+          <div key={index} id="all-posts">
             <NewPost
               className={e.category}
-              key={e.id}
+              id={e.postId}
               name={e.name}
               category={e.category}
               post={e.post}

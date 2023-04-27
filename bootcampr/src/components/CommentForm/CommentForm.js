@@ -5,7 +5,8 @@ function CommentForm({ handleNewComment }) {
   const [commentName, setCommentName] = useState("");
   const [commentPost, setCommentPost] = useState("");
 
-  function handleCommentSubmit() {
+  function handleCommentSubmit(e) {
+    e.preventDefault();
     handleNewComment(commentName, commentPost);
     setCommentName("");
     setCommentPost("");
