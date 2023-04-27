@@ -2,7 +2,7 @@ import { useState } from "react";
 import Comment from "../Comment/Comment";
 import CommentForm from "../CommentForm/CommentForm";
 
-function CommentList() {
+function CommentList({category}) {
   // state for the comments array
   const [comments, setComments] = useState([]);
   // function to create a new Comment and add to the comments array
@@ -22,6 +22,7 @@ function CommentList() {
           key={Math.random().toString(36)}
           commentName={e.commentName}
           commentPost={e.commentPost}
+          className={category}
         />
       ))}
       <CommentForm handleNewComment={handleNewComment} />

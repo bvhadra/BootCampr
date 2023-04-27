@@ -1,9 +1,9 @@
 import React from "react";
 import "./Comment.css";
 
-function Comment({ commentName, commentPost }) {
+function Comment({ category, commentName, commentPost }) {
   return (
-    <div className="Comment">
+    <div className={category}>
       <p>{commentName}</p>
       <p>{commentPost}</p>
     </div>

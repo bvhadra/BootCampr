@@ -15,7 +15,7 @@ function NewPost({ id, name, category, post }) {
         <p id="post">{post}</p>
       </div>
       <div className={categoryClassName}>
-        <CommentList />
+        <CommentList category={category} />
       </div>
     </div>
   );
