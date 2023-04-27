@@ -16,6 +16,7 @@
     padding-bottom: 15px;
     bottom: 0;
     border-radius: 3px;
+    border-top: solid 5px var(--orange);
 }
 
 .footerimg {
