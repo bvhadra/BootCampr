@@ -1,6 +1,7 @@
-## Bootcampr
+# Bootcampr
 
 Created by FourStar
+
 Team Members: Guy, Bidhan, Lawrence and Catherine
 
 This is a social networking app for School of Code (SoC) bootcampers where users can create posts and leave comments on them. The app was built using React.
