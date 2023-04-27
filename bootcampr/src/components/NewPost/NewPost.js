@@ -7,12 +7,11 @@ function NewPost({ id, name, category, post }) {
   const categoryClassName = `${category}`;
 
   return (
-
     <div>
       <div className={categoryClassName}>
-        <h3>{name}</h3>
-        <h6>{category}</h6>
+        <p id="name">{name}</p>
         <p id="post">{post}</p>
+        <p id="category">#{category}</p>
       </div>
       <div className={categoryClassName}>
         <CommentList />
