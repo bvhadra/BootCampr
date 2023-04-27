@@ -19,6 +19,7 @@ function CommentForm({ handleNewComment }) {
         placeholder="Name...."
         value={commentName}
         onChange={(e) => setCommentName(e.target.value)}
+        maxLength={30}
       ></input>
       <textarea
         type="text"
@@ -27,6 +28,7 @@ function CommentForm({ handleNewComment }) {
         placeholder="Comment...."
         value={commentPost}
         onChange={(e) => setCommentPost(e.target.value)}
+        maxLength={100}
       ></textarea>
       <button id="comment-button" onClick={handleCommentSubmit}>
         Submit

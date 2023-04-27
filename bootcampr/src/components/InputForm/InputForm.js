@@ -30,7 +30,7 @@ function InputForm({ handleNewPost }) {
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        
+        maxLength={30}
       ></input>
       <select
         name="category"
