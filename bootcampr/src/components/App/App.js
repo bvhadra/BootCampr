@@ -41,7 +41,8 @@ function App() {
           </div>
         ))}
       </div>
-      <div><Footer /></div>
+
+      <div id ="footer"><Footer /></div>
     </div>
   );
 }

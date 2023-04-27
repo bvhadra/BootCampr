@@ -6,6 +6,11 @@
   --cream: #f1f1e6;
 }
 
+  * {
+    border-radius: 5px;
+  }
+
+
 .General {
   background-color: var(--light-blue);
   padding: 10px;
@@ -34,3 +39,4 @@
   margin-bottom: 20px;
   border-radius: 10px;
 }
+
