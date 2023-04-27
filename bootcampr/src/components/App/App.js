@@ -24,16 +24,18 @@ function App() {
 
   return (
     <div className="App">
-      <div><Header /></div>
+      <div>
+        <Header />
+      </div>
       <div id="main-container">
-      <div id="input-form">
-        <InputForm handleNewPost={handleNewPost} />
+        <div id="input-form">
+          <InputForm handleNewPost={handleNewPost} />
         </div>
         {posts.map((e) => (
           <div id="all-posts">
             <NewPost
               className={e.category}
-              key={Math.random().toString(36)}
+              key={e.id}
               name={e.name}
               category={e.category}
               post={e.post}
@@ -42,7 +44,9 @@ function App() {
         ))}
       </div>
 
-      <div id ="footer"><Footer /></div>
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
