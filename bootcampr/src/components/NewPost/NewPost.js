@@ -11,7 +11,7 @@ function NewPost({ id, name, category, post }) {
     <div>
       <div className={categoryClassName}>
         <h3>{name}</h3>
-        <h6>{category}</h6>
+        <h6>#{category}</h6>
         <p id="post">{post}</p>
       </div>
       <div className={categoryClassName}>
