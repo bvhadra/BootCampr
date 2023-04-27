@@ -6,6 +6,10 @@
     --cream: #f1f1e6;
   }
 
+  * {
+    border-radius: 5px;
+  }
+
 .general {
     background-color: var(--light-blue);
   }
