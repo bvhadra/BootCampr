@@ -1,6 +1,6 @@
 # Bootcampr
 
-Created by FourStar
+⭐⭐⭐ Created by FourStar ⭐⭐⭐⭐
 
 Team Members: Guy, Bidhan, Lawrence and Catherine
 
@@ -27,3 +27,5 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 ## Acknowledgements
 
 This project was built during a one week sprint at School of Code.
+
+⭐⭐⭐⭐
